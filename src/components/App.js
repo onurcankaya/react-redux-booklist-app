@@ -1,9 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
+import BookList from './book-list'
+import BookDetails from './book-details'
 
-class App extends Component {
+class App extends React.PureComponent {
   render() {
-    return <div className="app">Book List</div>
+    return (
+      <div>
+        <BookList />
+        <BookDetails />
+      </div>
+    )
   }
 }
-
 export default App
